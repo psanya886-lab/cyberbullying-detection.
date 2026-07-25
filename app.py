@@ -1,10 +1,10 @@
 import pickle
 import gradio as gr
 
-with open(r"C:\Users\sanya\model.pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open(r"C:\Users\sanya\tfidfvectorizer.pkl", "rb") as f:
+with open("tfidfvectorizer.pkl", "rb") as f:
     tfidfvector = pickle.load(f)
 
 def predict(text):
