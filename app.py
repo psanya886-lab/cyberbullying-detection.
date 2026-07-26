@@ -59,4 +59,4 @@ demo = gr.Interface(
     description="Enter a comment to detect whether it is toxic or non-toxic."
 )
 
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=7860)
